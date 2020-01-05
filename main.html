@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>MuscleIOT</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link href="css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+  <style>
+    td {
+        font-family: 'Kanit', sans-serif;
+    }
+    p {
+        font-family: 'Kanit', sans-serif;
+    }
+</style>
+
+</head>
+
+
+
+
+
+<body class="gray-edition">
+
+  
+
+  <div class="wrapper ">
+    <div class="sidebar" data-color="azure" data-background-color="black" data-image="./assets/img/sidebar-5.jpg">
+      <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+      <div class="logo">
+        <a class="simple-text logo-normal">
+          Main
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active ">
+            <a class="nav-link" href="./main.html">
+              <i class="material-icons">dashboard</i>
+              <p>Main</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./newPerson.html">
+                <i class="material-icons">person</i>
+                <p>New Person</p>
+            </a>
+        </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./managePerson.html">
+              <i class="material-icons">content_paste</i>
+              <p>Manage Person</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="javscript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <div class="row">
+                    <i class="material-icons">person</i>
+                    <div></div>
+                    <div id="user"></div>
+                  </div>
+                  <p class="d-lg-none d-md-block">
+                    User
+                  </p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <div id="user_div" class="loggedin-div">
+                    <a class="dropdown-item" onclick="logout()" href="index.html">Logout</a>
+                  </div>
+                </div>
+              </li>
+
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="container-fluid">
+
+
+
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <h2 align="center" >EMG with IOT</h2>
+            <p align="center">&nbsp;</p>
+            <div align="center">
+              <ul class="carousel-indicators">
+               
+              </ul>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div align="center"><img align="center" src="https://www.picz.in.th/images/2018/08/19/BvXGvk.png" alt="BvXGvk.png"
+                    border="0" />
+                </div>
+                <div class="carousel-caption">
+                  <h3 align="center">Muscle</h3>
+
+                </div>
+              </div>
+              
+              
+            </div>
+           
+          </div>
+          <h3 align="center">&nbsp;</h3>
+          <h3 align="center">The analyze of muscle strength from electrical signals</h3>
+          <p align="center">&nbsp;</p>
+
+        </div>
+
+        
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase.js"></script>
+        <script src="js/main.js"></script>
+
+
+
+
+
+
+
+        <!--   Core JS Files   -->
+        <script src="./assets/js/core/jquery.min.js"></script>
+        <script src="./assets/js/core/popper.min.js"></script>
+        <script src="./assets/js/core/bootstrap-material-design.min.js"></script>
+        <script src="https://unpkg.com/default-passive-events"></script>
+        <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <!-- Chartist JS -->
+        <script src="./assets/js/plugins/chartist.min.js"></script>
+        <!--  Notifications Plugin    -->
+        <script src="./assets/js/plugins/bootstrap-notify.js"></script>
+        <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+        <script src="./assets/js/material-dashboard.js?v=2.1.0"></script>
+        <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+        <script src="./assets/demo/demo.js"></script>
+
+      </div>
+
+</body>
+
+</html>
